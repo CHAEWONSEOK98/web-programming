@@ -34,6 +34,9 @@ if (cursor) {
       f.style.height = t.clientHeight + "px";
 
       f.classList.add("on-focus");
+    } else if (t.tagName == "AUDIO") {
+      f.style.visibility = "hidden";
+      c.style.backgroundColor = "transparent";
     } else {
       move(c, e);
       move(f, e);

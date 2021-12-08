@@ -73,3 +73,13 @@ body {
   color: white;
   transform: scale(1.1);
 }
+
+.audio {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.audio:hover {
+  cursor: pointer;
+}
