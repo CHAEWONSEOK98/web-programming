@@ -1,0 +1,28 @@
+/*n번 사용하기 위해 따로 만든 css*/
+.cursor,
+.follow {
+  position: absolute;
+  pointer-events: none;
+  height: 0.4em;
+  width: 0.4em;
+  transform: translate(-50%, -50%);
+}
+
+.cursor {
+  background: white;
+  border-radius: 50%;
+}
+
+.follow {
+  padding: 2rem;
+  border: 0.1rem solid white;
+  transition: all 0.2s ease-out;
+  border-radius: 100%;
+}
+
+.follow.on-focus {
+  transform: translate(-0.55rem, -0.55rem);
+  border: 0.1rem solid white;
+  border-radius: 0%;
+  padding: 0.46rem;
+}

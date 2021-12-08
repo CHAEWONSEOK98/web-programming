@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #161616;
+}
+
+.vaccinePassFull {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.vaccinePassFull a {
+  text-decoration: none;
+}
+
+.vaccinePass0,
+.vaccinePass1,
+.vaccinePass2 {
+  align-items: center;
+  width: 370px;
+  height: 600px;
+}
+
+.vaccinePassUpDown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.vaccinePassUp {
+  background-color: #212121;
+  height: 350px;
+  border: 3px solid black;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  transition: ease-in-out all 1s;
+}
+
+.vaccinePassUp:hover {
+  transform: scale(1.1);
+  transition: ease-in-out all 1s;
+}
+
+.vaccineMe {
+  color: white;
+  position: relative;
+  font-size: 24px;
+  font-weight: bold;
+  top: 74%;
+  left: 10%;
+}
+
+.vaccinePass0 .vaccinePassUp .vaccinePassImg img,
+.vaccinePass1 .vaccinePassUp .vaccinePassImg img,
+.vaccinePass2 .vaccinePassUp .vaccinePassImg img {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.vaccinePassImg span {
+  color: white;
+  margin-left: 10px;
+}
+
+.vaccinePassImg {
+  position: relative;
+  top: 77%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.vaccinePassDown {
+  background-color: #161616;
+  height: 150px;
+  display: flex;
+  border: 3px solid black;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: ease-in-out all 1s;
+}
+
+.vaccinePassDown:hover {
+  transform: scale(1.1);
+  transition: ease-in-out all 1s;
+}
+
+.vaccinePassAdult,
+.vaccinePassCount,
+.vaccinePassCount2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  text-align: center;
+}
+
+.vaccinePassAdult span:nth-child(1) {
+  color: #bdbdbd;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.vaccinePassAdult span:nth-child(2) {
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.vaccinePassCount span:nth-child(1) {
+  color: #bdbdbd;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.vaccinePassCount span:nth-child(2) {
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.vaccinePassUser,
+.vaccinePassVaccine {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 10%;
+  left: 50%;
+}
+
+.vaccinePassName {
+  display: flex;
+  flex-direction: column;
+}
+
+.vaccinePassName span:nth-child(1) {
+  color: #bdbdbd;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.vaccinePassName span:nth-child(2) {
+  color: white;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.vaccinePassBirth {
+  display: flex;
+  flex-direction: column;
+}
+
+.vaccinePassBirth span:nth-child(1) {
+  color: #bdbdbd;
+  opacity: 0.7;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.vaccinePassBirth span:nth-child(2) {
+  color: white;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.vaccinePassBirth span:nth-child(3) {
+  color: white;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.vaccinePassCount2 {
+  position: relative;
+  top: 10%;
+  left: ;
+}
+
+.vaccinePassCount2Up {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: -30%;
+}
+
+.vaccinePassCount2Up span:nth-child(1) {
+  color: #bdbdbd;
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.vaccinePassCount2Up span:nth-child(2) {
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.vaccinePassCount2Down {
+  display: flex;
+  margin-top: 20px;
+}
+
+.vaccinePassCount2Down span:nth-child(1) {
+  color: #b0ff57;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #b0ff57;
+}
+
+.vaccinePassCount2Down span:nth-child(2) {
+  color: #b0ff57;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-left: 10px;
+  border: 1px solid #b0ff57;
+}
+
+.vaccinePassVaccine2 {
+  position: relative;
+  left: 25%;
+  top: 10%;
+}

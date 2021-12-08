@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #161616;
+}
+
+#login-form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#login-form input:nth-child(1) {
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  margin: 0;
+}
+
+#login-form input:nth-child(2) {
+  text-align: center;
+  width: 50px;
+  height: 35px;
+  margin: 0;
+  position: relative;
+  right: 5px;
+  top: 1px;
+}

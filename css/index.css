@@ -1,0 +1,75 @@
+@import "mouse-event.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: #161616;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/*코로나 이미지*/
+.brandImg img {
+  width: 150px;
+  height: 150px;
+  padding: 0 15px;
+  background-color: none;
+  transition: all;
+  animation: coronaImgAnimation 3s ease-in-out infinite;
+}
+
+@keyframes coronaImgAnimation {
+  0% {
+    transform: none;
+  }
+  20% {
+    transform: scale(0.4);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(0.7);
+  }
+  80% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+/*로그인 및 회원가입*/
+
+.join {
+  display: flex;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: 4rem;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: grey;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: white;
+  transform: scale(1.1);
+}

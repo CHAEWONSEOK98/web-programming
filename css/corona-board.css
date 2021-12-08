@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: #161616;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+.board {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.coronaBoardFull {
+  width: 40%;
+  display: flex;
+  border: black 2px solid;
+  margin-top: 10px;
+}
+
+.coronaBoard {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#coronaBoardTitle {
+  margin: 0;
+  margin-top: 10px;
+}
+
+#coronaBoardTime {
+  margin-bottom: 5px;
+}
+
+#coronaBoardTimeUnique a {
+  color: white;
+  text-decoration: none;
+}
+
+#coronaBoardTimeUnique:hover {
+  cursor: pointer;
+}
+
+.line1,
+.line2,
+.line3,
+.line4 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #161616;
+}
+
+.line1-1,
+.line2-1,
+.line3-1 {
+  margin-left: 15px;
+}
+
+.line1-4,
+.line2-4,
+.line3-5 {
+  margin-right: 15px;
+}
+
+.line1-1,
+.line1-2,
+.line1-3,
+.line1-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.colorRed {
+  color: red;
+}
+
+.colorGreen {
+  color: green;
+}
+
+.fontBold {
+  font-weight: bold;
+}
+
+.line2-1,
+.line2-2,
+.line2-3,
+.line2-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.line2-1 span:nth-child(2) {
+  color: red;
+}
+
+.line3-1,
+.line3-2,
+.line3-3,
+.line3-4,
+.line3-5 {
+  display: flex;
+  flex-direction: column;
+}
+
+.line3 {
+  margin-bottom: 50px;
+}
+
+.line4 {
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+#explain:hover {
+  cursor: pointer;
+}
+
+.line5 {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #424242;
+  margin: 20px 0;
+  height: 50px;
+  line-height: 50px;
+}
+
+.coronaList {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
