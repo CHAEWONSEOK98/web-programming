@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>코로나 상황판</title>
+    <link rel="stylesheet" href="css/corona-board.css" />
+  </head>
+  <body>
+    <section class="board">
+
+      <!--실시간 코로나 상황판-->
+      <div class="coronaBoardFull">
+        <div class="coronaBoard">
+          <h1 id="coronaBoardTitle">
+            코로나19(COVID-19) <br />
+            실시간 상황판
+          </h1>
+          <h3 id="coronaBoardTime">
+            마지막 업데이트:2021.12.6. 오전 9:56:30
+            <span id="coronaBoardTimeUnique"><a href="https://coronaboard.kr/" target="_blank">⟳</a></span>
+          </h3>
+          <h2>전 세계</h2>
+          <div class="line1">
+            <div class="line1-1">
+              <span class="fontBold">257,520,264</span>
+              <span class="colorRed">(+253,254)</span>
+              <span>확진자</span>
+            </div>
+            <div class="line1-2">
+              <span class="colorRed fontBold">5,165,736</span>
+              <span class="colorRed">(+4,393)</span>
+              <span>사망자</span>
+            </div>
+            <div class="line1-3">
+              <span class="fontBold">230,757,844</span>
+              <span class="colorGreen">(+185,785)</span>
+              <span>격리해제</span>
+            </div>
+            <div class="line1-4">
+              <span class="fontBold">2.01%</span>
+              <br />
+              <span>치명률</span>
+            </div>
+          </div>
+
+          <h2>대한민국</h2>
+          <div class="line2">
+            <div class="line2-1">
+              <span class="fontBold">418,252</span>
+              <span class="colorRed">(+2,827)</span>
+              <span>확진자</span>
+            </div>
+            <div class="line2-2">
+              <span class="colorRed fontBold">3,298</span>
+              <span class="colorRed">(+24)</span>
+              <span>사망자</span>
+            </div>
+            <div class="line2-3">
+              <span class="fontBold">376,706</span>
+              <span>(+951)</span>
+              <span class="colorGreen">격리해제</span>
+            </div>
+            <div class="line2-4">
+              <span class="fontBold">0.79%</span>
+              <br />
+              <span>치명률</span>
+            </div>
+          </div>
+
+          <h2>백신 접종 현황</h2>
+          <div class="line3">
+            <div class="line3-1">
+              <span class="fontBold">81,234,090</span>
+              <span class="colorGreen">(-)</span>
+              <span>접종 횟수</span>
+            </div>
+            <div class="line3-2">
+              <span class="fontBold">42,237,120</span>
+              <span class="colorGreen">(-)</span>
+              <span>1차 접종</span>
+            </div>
+            <div class="line3-3">
+              <span class="fontBold">40,493,353</span>
+              <span class="colorGreen">(-)</span>
+              <span>접종 완료</span>
+            </div>
+            <div class="line3-4">
+              <span class="fontBold">82.30%</span>
+              <span class="colorGreen">(-)</span>
+              <span>1차 접종률</span>
+            </div>
+            <div class="line3-5">
+              <span class="fontBold">78.90%</span>
+              <span class="colorGreen">(-)</span>
+              <span>접종 완료율</span>
+            </div>
+          </div>
+
+          <div class="line4">
+            <span class="line4-1"> <span id="explain">⊙</span> 용어 설명 </span>
+            <span class="line4-2">
+              *대한민국 수치는 질병관리청 보도자료 기준
+            </span>
+            <span class="line4-3">
+              *대한민국 확진자 증감수치는 전일 발표 대비 변화량
+            </span>
+          </div>
+
+          <div class="line5">
+            <span>신규 확진자 : 해외유입 + 21 / 지역발생 + 2806</span>
+          </div>
+        </div>
+      </div>
+
+      <!--지역별 코로나 현황표 -->
+      <div class="coronaListFull">
+        <div class="coronaList">
+          <table border="1">
+            <thead>
+              <tr>
+                <th></th>
+                <th>지역</th>
+                <th>확진자</th>
+                <th>치료중</th>
+                <th>사망자</th>
+                <th>격리해제</th>
+                <th>치명(%)</th>
+                <th>완치(%)</th>
+                <th>발생률*</th>
+                <th>인구수</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>서울</td>
+                <td>141,748 <br /><span class="colorRed">(+1,278)</span></td>
+                <td>17,857 <br /><span class="colorRed">(+938)</span></td>
+                <td>960 <br /><span class="colorRed">(+8)</span></td>
+                <td>122,931 <br /><span class="colorGreen">(+332)</span></td>
+                <td>0.7</td>
+                <td>86.7</td>
+                <td>1,456.29</td>
+                <td>9,733,509</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>경기</td>
+                <td>125,278 <br /><span class="colorRed">(+820)</span></td>
+                <td>11,572 <br /><span class="colorRed">(+619)</span></td>
+                <td>1,082 <br /><span class="colorRed">(+10)</span></td>
+                <td>112,624 <br /><span class="colorGreen">(+191)</span></td>
+                <td>0.9</td>
+                <td>89.9</td>
+                <td>945.47</td>
+                <td>13,250,368</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>인천</td>
+                <td>22,767 <br /><span class="colorRed">(+161)</span></td>
+                <td>2,311 <br /><span class="colorRed">(+101)</span></td>
+                <td>129 <br /><span class="colorRed">(+2)</span></td>
+                <td>20,327 <br /><span class="colorGreen">(+58)</span></td>
+                <td>0.6</td>
+                <td>89.3</td>
+                <td>770.17</td>
+                <td>2,956,119</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>대구</td>
+                <td>18,298 <br /><span class="colorRed">(+53)</span></td>
+                <td>626 <br /><span class="colorRed">(+7)</span></td>
+                <td>302 <br /><span class="colorRed">(+2)</span></td>
+                <td>17,370 <br /><span class="colorGreen">(+44)</span></td>
+                <td>1.7</td>
+                <td>94.9</td>
+                <td>751</td>
+                <td>2,436,488</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>부산</td>
+                <td>15,407 <br /><span class="colorRed">(+90)</span></td>
+                <td>940 <br /><span class="colorRed">(+24)</span></td>
+                <td>178 <br /><span></span></td>
+                <td>14,289 <br /><span class="colorGreen">(+66)</span></td>
+                <td>1.2</td>
+                <td>92.7</td>
+                <td>451.58</td>
+                <td>3,411,819</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>경남</td>
+                <td>14,367 <br /><span class="colorRed">(+65)</span></td>
+                <td>835 <br /><span class="colorRed">(+16)</span></td>
+                <td>48 <br /><span class="colorRed">(+1)</span></td>
+                <td>13,484 <br /><span class="colorGreen">(+48)</span></td>
+                <td>0.3</td>
+                <td>93.9</td>
+                <td>427.42</td>
+                <td>3,361,344</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>충남</td>
+                <td>12,032 <br /><span class="colorRed">(+47)</span></td>
+                <td>777 <br /><span class="colorRed">(+17)</span></td>
+                <td>75 <br /><span></span></td>
+                <td>11,180 <br /><span class="colorGreen">(+30)</span></td>
+                <td>0.6</td>
+                <td>92.9</td>
+                <td>566.89</td>
+                <td>2,122,455</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>경북</td>
+                <td>10,604 <br /><span class="colorRed">(+39)</span></td>
+                <td>426 <br /><span class="colorRed">(+13)</span></td>
+                <td>100 <br /><span></span></td>
+                <td>10,078 <br /><span class="colorGreen">(+26)</span></td>
+                <td>0.9</td>
+                <td>95.0</td>
+                <td>398.27</td>
+                <td>2,2662,508</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>충북</td>
+                <td>8,565 <br /><span class="colorRed">(+26)</span></td>
+                <td>260 <br /><span class="colorRed">(+12)</span></td>
+                <td>89 <br /><span></span></td>
+                <td>8,216 <br /><span class="colorGreen">(+14)</span></td>
+                <td>1.0</td>
+                <td>95.9</td>
+                <td>535.52</td>
+                <td>1,599,391</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>대전</td>
+                <td>8,165 <br /><span class="colorRed">(+36)</span></td>
+                <td>397 <br /><span class="colorRed">(+22)</span></td>
+                <td>56 <br /><span class="colorRed"(+1)</span></td>
+                <td>7,712 <br /><span class="colorGreen">(+14)</span></td>
+                <td>0.7</td>
+                <td>94.5</td>
+                <td>553.88</td>
+                <td>1,474,152</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>강원</td>
+                <td>8,073 <br /><span class="colorRed">(+55)</span></td>
+                <td>560 <br /><span class="colorRed">(+28)</span></td>
+                <td>70 <br /><span class="colorRed">(+1)</span></td>
+                <td>7,443 <br /><span class="colorGreen">(+26)</span></td>
+                <td>0.9</td>
+                <td>92.2</td>
+                <td>524.04</td>
+                <td>1,540,540</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>검역</td>
+                <td>6,406 <br /><span class="colorRed">(+7)</span></td>
+                <td>146 <br /><span class="colorRed">(+7)</span></td>
+                <td>16 <br /><span class="colorRed"></span></td>
+                <td>6,244 <br /><span></span></td>
+                <td>0.2</td>
+                <td>97.5</td>
+                <td>0</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>전북</td>
+                <td>5,981 <br /><span class="colorRed">(+34)</span></td>
+                <td>461 <br /><span class="colorGreen">(-14)</span></td>
+                <td>70 <br /><span></span></td>
+                <td>5,450 <br /><span class="colorGreen">(+48)</span></td>
+                <td>1.2</td>
+                <td>91.1</td>
+                <td>329.11</td>
+                <td>1,817,302</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>광주</td>
+                <td>5,918 <br /><span class="colorRed">(+57)</span></td>
+                <td>349 <br /><span class="colorRed">(+43)</span></td>
+                <td>30 <br /><span></span></td>
+                <td>5,539 <br /><span class="colorGreen">(+14)</span></td>
+                <td>0.5</td>
+                <td>93.6</td>
+                <td>406.26</td>
+                <td>1,456,688</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>울산</td>
+                <td>5,580 <br /><span class="colorRed">(+10)</span></td>
+                <td>73 <br /><span class="colorRed">(+8)</span></td>
+                <td>57 <br /><span></span></td>
+                <td>5,450 <br /><span class="colorGreen">(+2)</span></td>
+                <td>1.0</td>
+                <td>97.7</td>
+                <td>486.47</td>
+                <td>1,147,037</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>전남</td>
+                <td>4,142 <br /><span class="colorRed">(+27)</span></td>
+                <td>372 <br /><span class="colorRed">(+12)</span></td>
+                <td>25 <br /><span></span></td>
+                <td>3,745 <br /><span class="colorGreen">(+15)</span></td>
+                <td>0.6</td>
+                <td>90.4</td>
+                <td>222.13</td>
+                <td>1,864,712</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>제주</td>
+                <td>3,464 <br /><span class="colorRed">(+17)</span></td>
+                <td>224 <br /><span></span></td>
+                <td>9 <br /><span></span></td>
+                <td>3,231 <br /><span class="colorGreen">(+17)</span></td>
+                <td>0.3</td>
+                <td>93.3</td>
+                <td>516.44</td>
+                <td>670,749</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>세종</td>
+                <td>1,457 <br /><span class="colorRed">(+5)</span></td>
+                <td>62 <br /><span class="colorGreen">(-1)</span></td>
+                <td>2 <br /><span></span></td>
+                <td>1,393 <br /><span class="colorGreen">(+6)</span></td>
+                <td>0.1</td>
+                <td>95.6</td>
+                <td>425.62</td>
+                <td>342,328</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/corona-board.js"></script>
+  </body>
+</html>

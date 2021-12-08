@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>백신패스-2차 접종</title>
+    <link rel="stylesheet" href="css/corona-vaccinepassTwoThree.css" />
+  </head>
+  <body>
+    <!--전체적인 화면 컨트롤박스-->
+    <div class="container">
+      <header>
+        <a href="corona-vaccinepass.html">
+          <button><</button>
+        </a>
+        <span class="header-center">증명서 QR코드</span>
+        <span class="vaccinepassDetail">상세보기</span>
+      </header>
+
+      <!--QR코드 시간 및 이미지-->
+      <section>
+        <span>남은시간 </span>
+        <span class="vaccineTimer">초</span>
+        <div class="qr">
+          <img src="imgs/qr1.png" class="qrImg" />
+        </div>
+      </section>
+
+      <!--백신 2차접종 인증-->
+      <section>
+        <div class="essentialInfo">
+          <span>필수 제출 정보</span>
+          <div class="essentialInfoBox1">
+            <span class="essentialInfoSpan1">백신</span>
+            <span class="essentialInfoSpan1">백신제조사</span>
+            <span class="essentialInfoSpan1">접종일자</span>
+            <span class="essentialInfoSpan1">접종차수</span>
+          </div>
+          <div class="essentialInfoBox2">
+            <span class="essentialInfoSpan2">접종국가</span>
+            <span class="essentialInfoSpan2">접종기관</span>
+            <span class="essentialInfoSpan2">로트번호</span>
+          </div>
+        </div>
+        <!--선택사항, 추가 제출 정보 체크박스와 연동-->
+        <div class="plusInfo">
+          <span>추가 제출 정보</span>
+          <div class="plusInfoDiv"></div>
+        </div>
+      </section>
+
+      <!--추가 제출 정보 체크박스-->
+      <form class="checkBox">
+        성명<input
+          type="checkbox"
+          name="option"
+          value="성명"
+          class="checkBoxName"
+        />
+        생년월일<input
+          type="checkbox"
+          name="option"
+          value="생년월일"
+          class="checkBoxBirth"
+        />
+        <input type="button" value="추가" class="checkBoxInsert" />
+        <input type="button" value="삭제" class="checkBoxRemove" />
+      </form>
+    </div>
+
+    <!--QR코드 생성 및 타이머, 동적 체크박스, 상세설명-->
+    <script src="js/corona-vaccinepass.js"></script>
+    <script src="js/corona-vaccinepass2.js"></script>
+  </body>
+</html>
